@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js - 1 Classwork</title>
+</head>
+<body>
+
+
+    <script>
+    var getUserName = prompt('', "Введіть ваше ім'я");
+    var getUserSecondName = prompt('', "Введіть ваше прізвище");
+    var getUserAge = prompt('', "Скільки вам років?");
+    var getFirstNumber = +prompt('', 'Введіть перше число');
+    var getSecondNumber = +prompt('', 'Введіть друге число');  
+    var getThirdNumber = +prompt('', 'Введіть третє число');
+    alert(`Середнє арифметичне число: ${(getFirstNumber + getSecondNumber + getThirdNumber) / 3}`);
+    var header = document.write("<header style='width:800px;height:200px; background-color:red;'>Я - header</header>");
+    var nav = document.write("<nav style='width:100px;height:400px;display:inline-block;background-color:yellow;'>Я - nav</nav>");
+    var section = document.write(`<section style='width:700px;height:400px;display:inline-block;background-color:green;font-weight:700;'>Ім'я - ${getUserName}, Прізвище - ${getUserSecondName}, Вік - ${getUserAge}</section>`);
+    var footer = document.write("<footer style='width:800px;height:200px;background-color:orange;'>Я - footer</footer>");
+</script>
+</body>
+</html>
