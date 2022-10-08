@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second homework js</title>
+</head>
+<style>
+    .main-block {
+        margin-left: 50px;
+    }
+</style>
+<body>
+    <script>// 1. -------------------------------------------------------------------------- 
+        // Перепишіть if з використанням оператора ?
+    //     let a = 3, b = 0;
+    //     // if (a + b < 4) {
+    //     //     result = "Мало";
+    //     // } else {
+    //     //     result = "Багато";
+    //     // }
+    //     a + b < 4 ? result = "Мало" : result = "Багато";
+    //     console.log(result)
+
+    // 2 ---------------------------------------------------------------------------------
+    // Перепішить if..else з використанням декількох операторів ?
+
+    // let message;
+    // let login = '';
+    // // if (login == "Василь") {
+    // //     message = 'Привіт'
+    // // } else if (login == 'Директор') {
+    // //     message = 'Доброго дня';
+    // // } else if (login == '') {
+    // //     message = 'Немає логіну';
+    // // } else {
+    // //     message = "";
+    // // }
+
+    // login == "Василь" ? message = "Привіт" : message = '';
+    // login == 'Директор' ? message = 'Доброго дня' : message = '';
+    // login == '' ? message = 'Немає логіну' : message = '';
+    // console.log(message);
+
+    // 3 -----------------------------------------------------------------------------------
+
+    // let a = 2;
+    // let b = 10;
+    // for (let i = a; i < b; i ++) {
+    //     // console.log(i)
+    //     if (i % 2 == 1) {
+    //         console.log(i)
+    //     }
+    // }
+</script>
+    <div class="main-block">
+        <div class="first-block">
+            <script>
+                        for (let i = 0; i < 10; i++){
+                            document.write("<br>");
+                        for (let j = (0 * i); j < 10; j++)  {
+                            document.write("*")
+                        }   
+                        }
+                    
+            
+                // </script>
+        </div>
+            <div class="second-block">
+                <script>
+                            for (let i = 0; i < 10; i++){
+                                document.write("<br>");
+                            for (let j = (0 + i); j < 10; j++)  {
+                                document.write("*")
+                            }   
+                            }
+                        
+                
+                    // </script>
+            </div>
+            <div class="third-block">
+                    <script>
+                        // То рывносторонный трикутник, просто важко зобразити його правильно в JS
+                                for(let i = 0; i < 10; i++){
+                switch(i){
+                    case 0:document.write('<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp*<br>');
+                    break;
+                    case 1:document.write('&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp* *<br>');
+                    break;
+                    case 2:document.write('&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp* * *<br>');
+                    break;
+                    case 3:document.write('&nbsp&nbsp&nbsp&nbsp&nbsp* * * *<br>');
+                    break;
+                    case 4:document.write('&nbsp&nbsp&nbsp&nbsp* * * * *<br>');
+                    break;
+                    case 5:document.write('&nbsp&nbsp&nbsp* * * * * *<br>');
+                    break;
+                    case 6:document.write('&nbsp&nbsp* * * * * * *<br>');
+                    break;
+                    case 7:document.write('&nbsp* * * * * * * *<br>');
+                    break;
+                    case 8:document.write('* * * * * * * * * <br>');
+                    break;
+                }
+        } 
+                             </script>
+            </div>
+            <div class="fourth-block">
+                <script>
+                       for(let i = 0; i < 10; i++){
+                switch(i){
+                    case 0:document.write('<br>&nbsp&nbsp&nbsp&nbsp&nbsp*<br>');
+                    break;
+                    case 1:document.write('&nbsp&nbsp&nbsp&nbsp**<br>');
+                    break;
+                    case 2:document.write('&nbsp&nbsp&nbsp***<br>');
+                    break;
+                    case 3:document.write('&nbsp&nbsp****<br>');
+                    break;
+                    case 4:document.write('&nbsp*****<br>');
+                    break;
+                    case 5:document.write('&nbsp&nbsp****<br>');
+                    break;
+                    case 6:document.write('&nbsp&nbsp&nbsp***<br>');
+                    break;
+                    case 7:document.write('&nbsp&nbsp&nbsp&nbsp**<br>');
+                    break;
+                    case 8:document.write('&nbsp&nbsp&nbsp&nbsp&nbsp*<br>');
+                    break;
+                }
+        } 
+                </script>
+        </div>
+    </div>
+</body>
+</html>
