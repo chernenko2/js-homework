@@ -17,7 +17,7 @@
 
 // areYouPlayingBanjo("Red");
 
-let arr = [1, 2, 3, 4, 5];
+// let arr = [1, 2, 3, 4, 5];
 // let a = arr.splice(2);
 // console.log(a);
 // console.log(arr);
@@ -32,3 +32,13 @@ let arr = [1, 2, 3, 4, 5];
 // console.log(arr);
 // arr.shift();
 // console.log(arr);
+
+// function num(...name) {
+//   let sum = 0;
+//   for (let i = 0; i < name.length; i++) {
+//     sum = i + sum;
+//   }
+//   return console.log(sum);
+// }
+
+// num(0, 1, 2, 3, 4, 5, 6, 7, 8);
