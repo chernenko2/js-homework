@@ -42,3 +42,88 @@
 // }
 
 // num(0, 1, 2, 3, 4, 5, 6, 7, 8);
+// Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+
+// The output should be two capital letters with a dot separating them.
+
+// It should look like this:
+
+// Sam Harris => S.H
+
+// patrick feeney => P.F
+
+// function abbrevName(name) {
+//   let arr = name.split(" ");
+//   let arr1 = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     arr1.push(arr[i].charAt(0));
+//   }
+//   let result = arr1.join(".").toUpperCase();
+//   return result;
+// }
+
+// abbrevName("peter sam");
+
+const wallet = {
+  name: "Oleh Chernenko",
+  bitcoin: {
+    name: "Bitcoin",
+    logo: '<img src="./img/Bitcoin.png" alt="bitcoin">',
+    amount: 5,
+    rate: 705000.37,
+  },
+  ethereum: {
+    name: "Ethereum",
+    logo: '<img src="./img/Ethereum.png" alt="Ethereum">',
+    amount: 4,
+    rate: 47367.65,
+  },
+  stellar: {
+    name: "Stellar",
+    logo: '<img src="./img/Stellar.png" alt="Stellar">',
+    amount: "100",
+    rate: 4.18,
+  },
+  show(nameOfCrypto) {
+    for (item in wallet) {
+      if (item == nameOfCrypto) {
+        const owner = document.getElementById("owner");
+        const crypto = document.getElementById("typeOfCrypto");
+        const logo = document.getElementById("logo");
+        const amountOfCrypto = document.getElementById("amount");
+        const total = document.getElementById("result");
+        owner.innerHTML = `Доброго дня ${this.name}!`;
+        crypto.innerHTML = `Назва криптовалюти: ${this[item].name} `;
+        logo.innerHTML = this[item].logo;
+        amountOfCrypto.innerHTML = `На вашому гаманці: ${this[item].amount} ${this[item].name}`;
+        total.innerHTML = `Якщо сьогодні продасте всю крипту, у вас буде: ${
+          this[item].amount * this[item].rate
+        } гривень`;
+      }
+    }
+
+    // console.log(`Доброго дня ${this.name}! На вашому рахунку ${nameOfCrypto}`);
+  },
+};
+// console.log(owner);
+wallet.show("bitcoin");
+wallet.show("stellar");
+wallet.show("ethereum");
+
+function generateRandomColor() {
+  //RGB
+  // FF0000
+  // 00FF00
+  // 0000FF
+  const hexCodes = "0123456789ABCDEFG";
+  let color = "";
+  for (let i = 0; i < 6; i++) {
+    color += hexCodes[Math.floor(Math.random() * hexCodes.length)];
+  }
+  return "#" + color;
+}
+
+let columns = document.getElementsByClassName("col");
+for (let i = 0; i < columns.length; i++) {
+  columns[i].style.background = generateRandomColor();
+}

@@ -4,11 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>SandBox</title>
 </head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        font-family: 'Poppins', sans-serif;
+        font-size: 22px;
+    }
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .col {
+        display: flex;
+        flex: 1 0 15%;
+        align-items: center;
+        justify-content: center;
+        transition: all 1s;
+        padding: 0px 30px;
+    }
+    .col:hover {
+        scale: 1.1;
+        font-size: 32px;
+    }
+    .title {
+        align-self: center;
+    }
+</style>
 <body>
-    
-
+       <div class="wrapper">
+        <div id="owner-block" class="col">
+            <div id="owner" class="title">Owner</div>
+           </div>
+           <div class="col">
+            <div id="typeOfCrypto" class="title">typeOfCrypto</div>
+           </div>
+           <div class="col">
+            <div id="logo" class="title">
+            </div>
+           </div>
+           <div class="col">
+            <div id="amount" class="title">amount</div>
+           </div>
+           <div class="col">
+            <div id="result" class="title">Price: if you sell it today</div>
+           </div>
+       </div>
     <script src="/sandbox.js"></script>
 </body>
 </html>

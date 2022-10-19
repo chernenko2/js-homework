@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework-5</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+
+
+
+    <script>
+        const content = {
+            header: "",
+            body: "",
+            footer: "",
+            date: "",
+            app: {
+                header: this.header,
+                body: this.body,
+                footer: this.footer,
+                date: this.date
+            },
+
+
+            get: function () {
+                this.header = prompt("Введіть заголовок!");
+                this.app.header = this.header;
+                this.body = prompt("Введіть тіло!");
+                this.app.body = this.body;
+                this.footer = prompt("Введіть футер!");
+                this.app.footer = this.footer;
+                this.date = prompt("Введіть дату!");
+                this.app.date = this.date;
+            },
+            show: function () {
+                document.write(`${"<p>"} Заголовок - ${this.header}`);
+                document.write(`${"<p>"} Тіло - ${this.body}`);
+                document.write(`${"<p>"} Футер - ${this.footer}`);
+                document.write(`${"<p>"} Дата - ${this.date}`);
+            },
+       };
+
+        content.get();
+        content.show();
+        console.log(content);
+        </script>
+</body>
+</html>
