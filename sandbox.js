@@ -63,7 +63,7 @@
 // }
 
 // abbrevName("peter sam");
-
+// ------------------------------------------------------------------------------------
 const wallet = {
   name: "Oleh Chernenko",
   bitcoin: {
@@ -127,3 +127,44 @@ let columns = document.getElementsByClassName("col");
 for (let i = 0; i < columns.length; i++) {
   columns[i].style.background = generateRandomColor();
 }
+// -------------------------------------------------------------------------------
+// const simpleStr = "abc";
+// const objstr = new String("abc");
+
+// function Point(x, y) {
+//   this.x = x;
+//   this.y = y;
+// }
+
+// const leftTop = new Point(0, 0);
+// const topPoint = new Point(10, 10);
+// const rightBottom = new Point(30, 30);
+
+// console.log(Point);
+// console.log(leftTop);
+// console.log(topPoint);
+// console.log(rightBottom);
+
+// function Calculator(x, y) {
+//   this.x = x;
+//   this.y = y;
+// }
+
+// Calculator.prototype.read = function () {
+//   this.x = +prompt("Введіть x");
+//   this.y = +prompt("Введіть y");
+//   return `x=${this.x}, y=${this.y}`;
+// };
+
+// Calculator.prototype.sum = function () {
+//   return this.x + this.y;
+// };
+
+// Calculator.prototype.mul = function () {
+//   return this.x * this.y;
+// };
+
+// const test = new Calculator();
+// console.log(test.read());
+// console.log(test.sum());
+// console.log(test.mul());
