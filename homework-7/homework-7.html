@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework-7</title>
+</head>
+<body>
+    <h1>Виселица!</h1>
+ <script>
+ // Создаем массив со словами
+ let words = [
+ "программа",
+ "макака",
+ "прекрасный",
+ "оладушек"
+ ];
+ // Выбираем случайное слово
+ let word = words[Math.floor(Math.random() * words.length)];
+ // Создаем итоговый массив
+ let answerArray = [];
+ for (let i = 0; i < word.length; i++) {
+ answerArray[i] = "_";
+ }
+// word це строка, фор іч для неї не працює, а робити з неї масив і використати фор іч, якось здається шо набагато більше коду ніж потрібно, якшо я не правий то напиши будь лака мені про це
+ let remainingLetters = word.length;
+ // Игровой цикл
+ while (remainingLetters > 0) {
+ // Показываем состояние игры
+ alert(answerArray.join(" "));
+// Hangman — здесь «Виселица»
+// 7. Пишем игру «Виселица» 123
+ // Запрашиваем вариант ответа
+ let guess = prompt("Угадайте букву, или нажмите Отмена для выхода из игры.");
+ if (guess === null) {
+ // Выходим из игрового цикла
+ break;
+ } else if (guess.length !== 1) {
+ alert("Пожалуйста, введите одиночную букву.");
+ } else {
+ // Обновляем состояние игры
+ for (let j = 0; j < word.length; j++) {
+ if (word[j] === guess) {
+ answerArray[j] = guess;
+ remainingLetters--;
+ }
+ }
+ }
+ // Конец игрового цикла
+ }
+ // Отображаем ответ и поздравляем игрока
+ alert(answerArray.join(" "));
+ alert("Отлично! Было загадано слово " + word);
+ </script>
+
+    <script src="./app.js"></script>
+</body>
+</html>
