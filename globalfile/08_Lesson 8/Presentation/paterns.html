@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaSript Тема урока</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style/normalize.css">
+    <link rel="stylesheet" href="../../style/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logotype"><a href="#"><img src="./image/philip-logo-2.png" alt="logo"></a></div>
+        <ul style="margin: 0;
+        font-size: 1.2em;">
+            <li> <a href="#block1">Тема сгодняшнего урока</a></li>
+            <li> <a href="#block3">Презентация к уроку</a></li>
+            <li> <a href="#block4">Классная работа</a></li>
+            <li> <a href="#block5">Домашняя работа</a></li>
+            <li> <a href="#block6">Дополнительные материалы</a></li>
+            <li> <a href="#block7">Подготовка к следующему уроку</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="block1" class="blocks-standart">
+            <div class="curse">JavaSript</div>
+            <div class="name-lesson">Работа с DOM</div>
+        </section>
+        <section id="block2" class="blocks-standart">
+            <article>Сегодня на уроке</article>
+            <ol>
+               <li>Интеграция JS</li>
+               <li>Document Object Model</li>
+               <li>Работа с окнами</li>
+               <li>Методы строк</li>
+            </ol>
+        </section>
+
+
+
+
+        <section id="block3" class="blocks-standart">
+                <div class="presentation-block">
+                    <header>Окружение</header>
+                    <article>
+                        <div>
+                                Язык JavaScript изначально был создан для веб-браузеров. Но с тех пор он значительно эволюционировал и превратился в кроссплатформенный язык программирования для решения широкого круга задач.
+
+                                Сегодня JavaScript может использоваться в браузере, на веб-сервере или в какой-то другой среде, даже в кофеварке. Каждая среда предоставляет свой функционал, который спецификация JavaScript называет окружением.
+                                
+                                Окружение предоставляет свои объекты и дополнительные функции, в дополнение базовым языковым. Браузеры, например, дают средства для управления веб-страницами. Node.js делает доступными какие-то серверные возможности и так далее.
+                        </div>
+                        <img src="./image/bj.png" alt="">
+                    </article>
+                    
+                </div>
+
+        </section>
+        <section id="block4" class="blocks-standart">
+            <header>Классная работа</header>
+            <article>
+               <ol>
+                   <li>
+                        Используя исключительно JS Сгенерируйте страницу курсов валют с приват банка и добавьте её в id root на странице inner.html
+                        файл находится в репозитории в папке к уроку CW.
+                        Курс должен выводить не менее 4 валют
+                        Пример USD 24.80 25.00
+                   </li>
+                 
+               </ol>
+            </article>
+        </section>
+        <section id="block5" class="blocks-standart">
+            <header>Домашнее задание</header>
+            <article>
+               <ol>
+                   <li>
+                       <div style="color:white">Нарисовать на странице круг используя параметры, которые введет пользователь.</div>
+                       <ul>
+                           <li>При загрузке страницы - показать на ней кнопку с текстом "Нарисовать круг". Данная кнопка должна являться единственным контентом в теле HTML документа, весь остальной контент должен быть создан и добавлен на страницу с помощью Javascript</li>
+                           <li>При нажатии на кнопку "Нарисовать круг" показывать одно поле ввода - диаметр круга. При нажатии на кнопку "Нарисовать" создать на странице 100 кругов (10*10) случайного цвета. При клике на конкретный круг - этот круг должен исчезать, при этом пустое место заполняться, то есть все остальные круги сдвигаются влево.</li>
+                       </ul>
+                   </li>
+                   <li>
+ <li>
+                       <div style="color:white">Написать реализацию игры ["Сапер"](http://minesweeper.odd.su/)</div>
+                       <ul>
+                           <li>Нарисовать на экране поле 8*8 (можно использовать таблицу или набор блоков).</li>
+                           <li>Сгенерировать на поле случайным образом 10 мин. Пользователь не видит где они находятся.</li>
+                           <li>Клик левой кнопкой по ячейке поля "открывает" ее содержимое пользователю. </li>
+                           <li>Если в данной ячейке находится мина, игрок проиграл. В таком случае показать все остальные мины на поле. Другие действия стают недоступны, можно только начать новую игру. </li>
+                           <li>Если мины нет, показать цифру - сколько мин находится рядом с этой ячейкой.</li>
+                           <li>Если ячейка пустая (рядом с ней нет ни одной мины) - необходимо открыть все соседние ячейки с цифрами.</li>
+                           <li>Клик правой кнопки мыши устанавливает или снимает с "закрытой" ячейки флажок мины.</li>
+                           <li>После первого хода над полем должна появляться кнопка "Начать игру заново",  которая будет обнулять предыдущий результат прохождения и заново инициализировать поле.</li>
+                           <li>Над полем должно показываться количество расставленных флажков, и общее количество мин (например `7 / 10`).</li>
+                       </ul>
+                   </li>
+                   
+               </ol>
+               <div >
+                <a style="color:white; cursor: pointer;" href="https://learn.javascript.ru/searching-elements-dom">Поиск DOM элементов</a> <br>
+                <a style="color:white;cursor: pointer;" href="https://learn.javascript.ru/modifying-document">Добавление и удаление узлов</a><br>
+                <a style="color:white;cursor: pointer;" href="https://learn.javascript.ru/introduction-browser-events">Введение в браузерные события</a><br>
+                <a style="color:white;cursor: pointer;" href="https://learn.javascript.ru/event-bubbling">Всплытие и перехват событий</a>
+               </div>
+            </article>
+        </section>
+        <section id="block6" class="blocks-standart">
+            <header>Дополнитнльные материалы</header>
+            <article>
+                <div class="link">
+                    <a href="https://learn.javascript.ru/document" target="_blank">DOM</a>
+                </div>
+               
+            </article>
+        </section>
+        <section id="block7" class="blocks-standart">
+            <header>Познакомится с материалами к началу следующего занятия № 9 Регулярные выражения и стили </header>
+            <article>
+                <div class="link">
+                    <a href="https://learn.javascript.ru/styles-and-classes" target="_blank">Использование стилей</a>
+                </div>
+                <div class="link">
+                    <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank">Регулярные выражения</a>
+                </div>
+               
+            </article>
+        </section>
+    </main>
+    <footer>
+     <div>
+         <span class="red"> После выполнения домашней работы отправь на проверку!!!</span>
+         <br>
+         Что делать елси я не знаю с чего мне начать или у меня есть дополнительные вопросы?
+         <ol>
+             <li>Открой браузер перейди  <a href="https://google.com" target="_blank" class="red">по ссыке</a>, попробуй найти ответ здесь на свои вопросы</li>
+             <li>Если не нашел, то пиши своим отдногорупникам в чат, может кто-то уже сталкивался с этим:) <a href="#" target="_blank" class="red">ссылка</a> </li>
+             <li>Если все еще твой вопрос не решен пиши мне в телеграмм "@Philip7e"</li>
+         </ol>
+     </div>
+    </footer>
+    <script src="../../globalfile/code/index.js"></script>
+</body>
+
+</html>
